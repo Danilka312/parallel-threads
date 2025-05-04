@@ -1,0 +1,192 @@
+
+******   2mm_og_gcc    ******
+
+gcc -o ./gcc/2mm_og_gcc 2mm_og.c -w 
+Запуск ./gcc/2mm_og_gcc
+Time in seconds = 0.092800
+
+******   2mm_og_gcc -O3   ******
+
+gcc -o ./gcc/2mm_og_gcc 2mm_og.c -w -O3
+Запуск ./gcc/2mm_og_gcc
+Time in seconds = 0.012480
+
+******   2mm_og_gcc -O2   ******
+
+gcc -o ./gcc/2mm_og_gcc 2mm_og.c -w -O2
+Запуск ./gcc/2mm_og_gcc
+Time in seconds = 0.019348
+
+******   2mm_og_gcc -Ofast   ******
+
+gcc -o ./gcc/2mm_og_gcc 2mm_og.c -w -Ofast
+Запуск ./gcc/2mm_og_gcc
+Time in seconds = 0.010344
+
+******   2mm_og_clang    ******
+
+clang -o ./clang/2mm_og_clang 2mm_og.c -w 
+Запуск ./clang/2mm_og_clang
+Time in seconds = 0.084947
+
+******   2mm_og_clang -O3   ******
+
+clang -o ./clang/2mm_og_clang 2mm_og.c -w -O3
+Запуск ./clang/2mm_og_clang
+Time in seconds = 0.018634
+
+******   2mm_og_clang -O2   ******
+
+clang -o ./clang/2mm_og_clang 2mm_og.c -w -O2
+Запуск ./clang/2mm_og_clang
+Time in seconds = 0.018041
+
+******   2mm_og_clang -Ofast   ******
+
+clang -o ./clang/2mm_og_clang 2mm_og.c -w -Ofast
+Запуск ./clang/2mm_og_clang
+Time in seconds = 0.017742
+
+******   2mm_og_nvc    ******
+
+nvc -o ./nvc/2mm_og_nvc 2mm_og.c -w 
+Запуск ./nvc/2mm_og_nvc
+Time in seconds = 0.073391
+
+******   2mm_og_nvc -O3   ******
+
+nvc -o ./nvc/2mm_og_nvc 2mm_og.c -w -O3
+Запуск ./nvc/2mm_og_nvc
+Time in seconds = 0.027932
+
+******   2mm_og_nvc -O2   ******
+
+nvc -o ./nvc/2mm_og_nvc 2mm_og.c -w -O2
+Запуск ./nvc/2mm_og_nvc
+Time in seconds = 0.026363
+
+******   2mm_og_nvc -Ofast   ******
+
+nvc -o ./nvc/2mm_og_nvc 2mm_og.c -w -Ofast
+Запуск ./nvc/2mm_og_nvc
+Time in seconds = 0.027928
+
+******   2mm_og_icx    ******
+
+icx -o ./icx/2mm_og_icx 2mm_og.c -w 
+Запуск ./icx/2mm_og_icx
+Time in seconds = 0.011021
+
+******   2mm_og_icx -O3   ******
+
+icx -o ./icx/2mm_og_icx 2mm_og.c -w -O3
+Запуск ./icx/2mm_og_icx
+Time in seconds = 0.011046
+
+******   2mm_og_icx -O2   ******
+
+icx -o ./icx/2mm_og_icx 2mm_og.c -w -O2
+Запуск ./icx/2mm_og_icx
+Time in seconds = 0.011078
+
+******   2mm_og_icx -Ofast   ******
+
+icx -o ./icx/2mm_og_icx 2mm_og.c -w -Ofast
+Запуск ./icx/2mm_og_icx
+Time in seconds = 0.011091
+
+******   2mm_new_gcc    ******
+
+gcc -o ./gcc/2mm_new_gcc 2mm_new.c -w 
+Запуск ./gcc/2mm_new_gcc
+Time in seconds = 0.066675
+
+******   2mm_new_gcc -O3   ******
+
+gcc -o ./gcc/2mm_new_gcc 2mm_new.c -w -O3
+Запуск ./gcc/2mm_new_gcc
+Time in seconds = 0.005778
+
+******   2mm_new_gcc -O2   ******
+
+gcc -o ./gcc/2mm_new_gcc 2mm_new.c -w -O2
+Запуск ./gcc/2mm_new_gcc
+Time in seconds = 0.014223
+
+******   2mm_new_gcc -Ofast   ******
+
+gcc -o ./gcc/2mm_new_gcc 2mm_new.c -w -Ofast
+Запуск ./gcc/2mm_new_gcc
+Time in seconds = 0.005729
+
+******   2mm_new_clang    ******
+
+clang -o ./clang/2mm_new_clang 2mm_new.c -w 
+Запуск ./clang/2mm_new_clang
+Time in seconds = 0.054325
+
+******   2mm_new_clang -O3   ******
+
+clang -o ./clang/2mm_new_clang 2mm_new.c -w -O3
+Запуск ./clang/2mm_new_clang
+Time in seconds = 0.006086
+
+******   2mm_new_clang -O2   ******
+
+clang -o ./clang/2mm_new_clang 2mm_new.c -w -O2
+Запуск ./clang/2mm_new_clang
+Time in seconds = 0.006350
+
+******   2mm_new_clang -Ofast   ******
+
+clang -o ./clang/2mm_new_clang 2mm_new.c -w -Ofast
+Запуск ./clang/2mm_new_clang
+Time in seconds = 0.006150
+
+******   2mm_new_nvc    ******
+
+nvc -o ./nvc/2mm_new_nvc 2mm_new.c -w 
+Запуск ./nvc/2mm_new_nvc
+Time in seconds = 0.050134
+
+******   2mm_new_nvc -O3   ******
+
+nvc -o ./nvc/2mm_new_nvc 2mm_new.c -w -O3
+Запуск ./nvc/2mm_new_nvc
+Time in seconds = 0.005922
+
+******   2mm_new_nvc -O2   ******
+
+nvc -o ./nvc/2mm_new_nvc 2mm_new.c -w -O2
+Запуск ./nvc/2mm_new_nvc
+Time in seconds = 0.006007
+
+******   2mm_new_nvc -Ofast   ******
+
+nvc -o ./nvc/2mm_new_nvc 2mm_new.c -w -Ofast
+Запуск ./nvc/2mm_new_nvc
+Time in seconds = 0.005935
+
+******   2mm_new_icx    ******
+
+icx -o ./icx/2mm_new_icx 2mm_new.c -w 
+Запуск ./icx/2mm_new_icx
+Time in seconds = 0.007957
+
+******   2mm_new_icx -O3   ******
+
+icx -o ./icx/2mm_new_icx 2mm_new.c -w -O3
+Запуск ./icx/2mm_new_icx
+Time in seconds = 0.007720
+
+******   2mm_new_icx -O2   ******
+
+icx -o ./icx/2mm_new_icx 2mm_new.c -w -O2
+Запуск ./icx/2mm_new_icx
+Time in seconds = 0.007909
+
+******   2mm_new_icx -Ofast   ******
+
+icx -o ./icx/2mm_new_icx 2mm_new.c -w -Ofast
+Запуск ./icx/2mm_new_icx
+Time in seconds = 0.007786

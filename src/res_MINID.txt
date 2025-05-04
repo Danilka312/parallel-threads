@@ -1,0 +1,512 @@
+
+******   for_gcc    ******
+
+gcc -fopenmp -o ./gcc/for_gcc for.c -w 
+OMP_NUM_THREADS=1 ././gcc/for_gcc
+Time in seconds = 0.000078
+OMP_NUM_THREADS=2 ././gcc/for_gcc
+Time in seconds = 0.000089
+OMP_NUM_THREADS=4 ././gcc/for_gcc
+Time in seconds = 0.000094
+OMP_NUM_THREADS=8 ././gcc/for_gcc
+Time in seconds = 0.000093
+OMP_NUM_THREADS=16 ././gcc/for_gcc
+Time in seconds = 0.000097
+OMP_NUM_THREADS=28 ././gcc/for_gcc
+Time in seconds = 0.000101
+
+******   for_gcc -O3   ******
+
+gcc -fopenmp -o ./gcc/for_gcc for.c -w -O3
+OMP_NUM_THREADS=1 ././gcc/for_gcc
+Time in seconds = 0.000010
+OMP_NUM_THREADS=2 ././gcc/for_gcc
+Time in seconds = 0.000016
+OMP_NUM_THREADS=4 ././gcc/for_gcc
+Time in seconds = 0.000023
+OMP_NUM_THREADS=8 ././gcc/for_gcc
+Time in seconds = 0.000022
+OMP_NUM_THREADS=16 ././gcc/for_gcc
+Time in seconds = 0.000023
+OMP_NUM_THREADS=28 ././gcc/for_gcc
+Time in seconds = 0.000026
+
+******   for_gcc -O2   ******
+
+gcc -fopenmp -o ./gcc/for_gcc for.c -w -O2
+OMP_NUM_THREADS=1 ././gcc/for_gcc
+Time in seconds = 0.000017
+OMP_NUM_THREADS=2 ././gcc/for_gcc
+Time in seconds = 0.000023
+OMP_NUM_THREADS=4 ././gcc/for_gcc
+Time in seconds = 0.000028
+OMP_NUM_THREADS=8 ././gcc/for_gcc
+Time in seconds = 0.000030
+OMP_NUM_THREADS=16 ././gcc/for_gcc
+Time in seconds = 0.000031
+OMP_NUM_THREADS=28 ././gcc/for_gcc
+Time in seconds = 0.000033
+
+******   for_gcc -Ofast   ******
+
+gcc -fopenmp -o ./gcc/for_gcc for.c -w -Ofast
+OMP_NUM_THREADS=1 ././gcc/for_gcc
+Time in seconds = 0.000010
+OMP_NUM_THREADS=2 ././gcc/for_gcc
+Time in seconds = 0.000015
+OMP_NUM_THREADS=4 ././gcc/for_gcc
+Time in seconds = 0.000021
+OMP_NUM_THREADS=8 ././gcc/for_gcc
+Time in seconds = 0.000022
+OMP_NUM_THREADS=16 ././gcc/for_gcc
+Time in seconds = 0.000023
+OMP_NUM_THREADS=28 ././gcc/for_gcc
+Time in seconds = 0.000051
+
+******   for_clang    ******
+
+clang -fopenmp -o ./clang/for_clang for.c -w 
+OMP_NUM_THREADS=1 ././clang/for_clang
+Time in seconds = 0.000073
+OMP_NUM_THREADS=2 ././clang/for_clang
+Time in seconds = 0.000079
+OMP_NUM_THREADS=4 ././clang/for_clang
+Time in seconds = 0.000084
+OMP_NUM_THREADS=8 ././clang/for_clang
+Time in seconds = 0.000084
+OMP_NUM_THREADS=16 ././clang/for_clang
+Time in seconds = 0.000170
+OMP_NUM_THREADS=28 ././clang/for_clang
+Time in seconds = 0.000139
+
+******   for_clang -O3   ******
+
+clang -fopenmp -o ./clang/for_clang for.c -w -O3
+OMP_NUM_THREADS=1 ././clang/for_clang
+Time in seconds = 0.000021
+OMP_NUM_THREADS=2 ././clang/for_clang
+Time in seconds = 0.000042
+OMP_NUM_THREADS=4 ././clang/for_clang
+Time in seconds = 0.000032
+OMP_NUM_THREADS=8 ././clang/for_clang
+Time in seconds = 0.000035
+OMP_NUM_THREADS=16 ././clang/for_clang
+Time in seconds = 0.000050
+OMP_NUM_THREADS=28 ././clang/for_clang
+Time in seconds = 0.000180
+
+******   for_clang -O2   ******
+
+clang -fopenmp -o ./clang/for_clang for.c -w -O2
+OMP_NUM_THREADS=1 ././clang/for_clang
+Time in seconds = 0.000042
+OMP_NUM_THREADS=2 ././clang/for_clang
+Time in seconds = 0.000026
+OMP_NUM_THREADS=4 ././clang/for_clang
+Time in seconds = 0.000036
+OMP_NUM_THREADS=8 ././clang/for_clang
+Time in seconds = 0.000053
+OMP_NUM_THREADS=16 ././clang/for_clang
+Time in seconds = 0.000038
+OMP_NUM_THREADS=28 ././clang/for_clang
+Time in seconds = 0.004097
+
+******   for_clang -Ofast   ******
+
+clang -fopenmp -o ./clang/for_clang for.c -w -Ofast
+OMP_NUM_THREADS=1 ././clang/for_clang
+Time in seconds = 0.000041
+OMP_NUM_THREADS=2 ././clang/for_clang
+Time in seconds = 0.000028
+OMP_NUM_THREADS=4 ././clang/for_clang
+Time in seconds = 0.000034
+OMP_NUM_THREADS=8 ././clang/for_clang
+Time in seconds = 0.000035
+OMP_NUM_THREADS=16 ././clang/for_clang
+Time in seconds = 0.000090
+OMP_NUM_THREADS=28 ././clang/for_clang
+Time in seconds = 0.000230
+
+******   for_nvc    ******
+
+nvc -mp -o ./nvc/for_nvc for.c -w 
+OMP_NUM_THREADS=1 ././nvc/for_nvc
+Time in seconds = 0.000070
+OMP_NUM_THREADS=2 ././nvc/for_nvc
+Time in seconds = 0.000052
+OMP_NUM_THREADS=4 ././nvc/for_nvc
+Time in seconds = 0.000079
+OMP_NUM_THREADS=8 ././nvc/for_nvc
+Time in seconds = 0.000076
+OMP_NUM_THREADS=16 ././nvc/for_nvc
+Time in seconds = 0.000077
+OMP_NUM_THREADS=28 ././nvc/for_nvc
+Time in seconds = 0.000083
+
+******   for_nvc -O3   ******
+
+nvc -mp -o ./nvc/for_nvc for.c -w -O3
+OMP_NUM_THREADS=1 ././nvc/for_nvc
+Time in seconds = 0.000024
+OMP_NUM_THREADS=2 ././nvc/for_nvc
+Time in seconds = 0.000030
+OMP_NUM_THREADS=4 ././nvc/for_nvc
+Time in seconds = 0.000034
+OMP_NUM_THREADS=8 ././nvc/for_nvc
+Time in seconds = 0.000039
+OMP_NUM_THREADS=16 ././nvc/for_nvc
+Time in seconds = 0.000044
+OMP_NUM_THREADS=28 ././nvc/for_nvc
+Time in seconds = 0.000061
+
+******   for_nvc -O2   ******
+
+nvc -mp -o ./nvc/for_nvc for.c -w -O2
+OMP_NUM_THREADS=1 ././nvc/for_nvc
+Time in seconds = 0.000024
+OMP_NUM_THREADS=2 ././nvc/for_nvc
+Time in seconds = 0.000030
+OMP_NUM_THREADS=4 ././nvc/for_nvc
+Time in seconds = 0.000036
+OMP_NUM_THREADS=8 ././nvc/for_nvc
+Time in seconds = 0.000043
+OMP_NUM_THREADS=16 ././nvc/for_nvc
+Time in seconds = 0.000043
+OMP_NUM_THREADS=28 ././nvc/for_nvc
+Time in seconds = 0.000052
+
+******   for_nvc -Ofast   ******
+
+nvc -mp -o ./nvc/for_nvc for.c -w -Ofast
+OMP_NUM_THREADS=1 ././nvc/for_nvc
+Time in seconds = 0.000024
+OMP_NUM_THREADS=2 ././nvc/for_nvc
+Time in seconds = 0.000031
+OMP_NUM_THREADS=4 ././nvc/for_nvc
+Time in seconds = 0.000037
+OMP_NUM_THREADS=8 ././nvc/for_nvc
+Time in seconds = 0.000036
+OMP_NUM_THREADS=16 ././nvc/for_nvc
+Time in seconds = 0.000040
+OMP_NUM_THREADS=28 ././nvc/for_nvc
+Time in seconds = 0.000049
+
+******   for_icx    ******
+
+icx -fiopenmp -o ./icx/for_icx for.c -w 
+OMP_NUM_THREADS=1 ././icx/for_icx
+Time in seconds = 0.000062
+OMP_NUM_THREADS=2 ././icx/for_icx
+Time in seconds = 0.000061
+OMP_NUM_THREADS=4 ././icx/for_icx
+Time in seconds = 0.000070
+OMP_NUM_THREADS=8 ././icx/for_icx
+Time in seconds = 0.000071
+OMP_NUM_THREADS=16 ././icx/for_icx
+Time in seconds = 0.000183
+OMP_NUM_THREADS=28 ././icx/for_icx
+Time in seconds = 0.000488
+
+******   for_icx -O3   ******
+
+icx -fiopenmp -o ./icx/for_icx for.c -w -O3
+OMP_NUM_THREADS=1 ././icx/for_icx
+Time in seconds = 0.000063
+OMP_NUM_THREADS=2 ././icx/for_icx
+Time in seconds = 0.000061
+OMP_NUM_THREADS=4 ././icx/for_icx
+Time in seconds = 0.000064
+OMP_NUM_THREADS=8 ././icx/for_icx
+Time in seconds = 0.000073
+OMP_NUM_THREADS=16 ././icx/for_icx
+Time in seconds = 0.000072
+OMP_NUM_THREADS=28 ././icx/for_icx
+Time in seconds = 0.000143
+
+******   for_icx -O2   ******
+
+icx -fiopenmp -o ./icx/for_icx for.c -w -O2
+OMP_NUM_THREADS=1 ././icx/for_icx
+Time in seconds = 0.000062
+OMP_NUM_THREADS=2 ././icx/for_icx
+Time in seconds = 0.000056
+OMP_NUM_THREADS=4 ././icx/for_icx
+Time in seconds = 0.000062
+OMP_NUM_THREADS=8 ././icx/for_icx
+Time in seconds = 0.000072
+OMP_NUM_THREADS=16 ././icx/for_icx
+Time in seconds = 0.000133
+OMP_NUM_THREADS=28 ././icx/for_icx
+Time in seconds = 0.000312
+
+******   for_icx -Ofast   ******
+
+icx -fiopenmp -o ./icx/for_icx for.c -w -Ofast
+OMP_NUM_THREADS=1 ././icx/for_icx
+Time in seconds = 0.000064
+OMP_NUM_THREADS=2 ././icx/for_icx
+Time in seconds = 0.000060
+OMP_NUM_THREADS=4 ././icx/for_icx
+Time in seconds = 0.000067
+OMP_NUM_THREADS=8 ././icx/for_icx
+Time in seconds = 0.000072
+OMP_NUM_THREADS=16 ././icx/for_icx
+Time in seconds = 0.000171
+OMP_NUM_THREADS=28 ././icx/for_icx
+Time in seconds = 0.000194
+
+******   tasks_gcc    ******
+
+gcc -fopenmp -o ./gcc/tasks_gcc tasks.c -w 
+OMP_NUM_THREADS=1 ././gcc/tasks_gcc
+Time in seconds = 0.000078
+OMP_NUM_THREADS=2 ././gcc/tasks_gcc
+Time in seconds = 0.000083
+OMP_NUM_THREADS=4 ././gcc/tasks_gcc
+Time in seconds = 0.000092
+OMP_NUM_THREADS=8 ././gcc/tasks_gcc
+Time in seconds = 0.000113
+OMP_NUM_THREADS=16 ././gcc/tasks_gcc
+Time in seconds = 0.000191
+OMP_NUM_THREADS=28 ././gcc/tasks_gcc
+Time in seconds = 0.000140
+
+******   tasks_gcc -O3   ******
+
+gcc -fopenmp -o ./gcc/tasks_gcc tasks.c -w -O3
+OMP_NUM_THREADS=1 ././gcc/tasks_gcc
+Time in seconds = 0.000013
+OMP_NUM_THREADS=2 ././gcc/tasks_gcc
+Time in seconds = 0.000019
+OMP_NUM_THREADS=4 ././gcc/tasks_gcc
+Time in seconds = 0.000021
+OMP_NUM_THREADS=8 ././gcc/tasks_gcc
+Time in seconds = 0.000086
+OMP_NUM_THREADS=16 ././gcc/tasks_gcc
+Time in seconds = 0.000055
+OMP_NUM_THREADS=28 ././gcc/tasks_gcc
+Time in seconds = 0.000093
+
+******   tasks_gcc -O2   ******
+
+gcc -fopenmp -o ./gcc/tasks_gcc tasks.c -w -O2
+OMP_NUM_THREADS=1 ././gcc/tasks_gcc
+Time in seconds = 0.000012
+OMP_NUM_THREADS=2 ././gcc/tasks_gcc
+Time in seconds = 0.000036
+OMP_NUM_THREADS=4 ././gcc/tasks_gcc
+Time in seconds = 0.000030
+OMP_NUM_THREADS=8 ././gcc/tasks_gcc
+Time in seconds = 0.000056
+OMP_NUM_THREADS=16 ././gcc/tasks_gcc
+Time in seconds = 0.000109
+OMP_NUM_THREADS=28 ././gcc/tasks_gcc
+Time in seconds = 0.000083
+
+******   tasks_gcc -Ofast   ******
+
+gcc -fopenmp -o ./gcc/tasks_gcc tasks.c -w -Ofast
+OMP_NUM_THREADS=1 ././gcc/tasks_gcc
+Time in seconds = 0.000013
+OMP_NUM_THREADS=2 ././gcc/tasks_gcc
+Time in seconds = 0.000015
+OMP_NUM_THREADS=4 ././gcc/tasks_gcc
+Time in seconds = 0.000034
+OMP_NUM_THREADS=8 ././gcc/tasks_gcc
+Time in seconds = 0.000051
+OMP_NUM_THREADS=16 ././gcc/tasks_gcc
+Time in seconds = 0.000069
+OMP_NUM_THREADS=28 ././gcc/tasks_gcc
+Time in seconds = 0.000063
+
+******   tasks_clang    ******
+
+clang -fopenmp -o ./clang/tasks_clang tasks.c -w 
+OMP_NUM_THREADS=1 ././clang/tasks_clang
+Time in seconds = 0.000122
+OMP_NUM_THREADS=2 ././clang/tasks_clang
+Time in seconds = 0.000096
+OMP_NUM_THREADS=4 ././clang/tasks_clang
+Time in seconds = 0.000130
+OMP_NUM_THREADS=8 ././clang/tasks_clang
+Time in seconds = 0.000164
+OMP_NUM_THREADS=16 ././clang/tasks_clang
+Time in seconds = 0.000770
+OMP_NUM_THREADS=28 ././clang/tasks_clang
+Time in seconds = 0.000546
+
+******   tasks_clang -O3   ******
+
+clang -fopenmp -o ./clang/tasks_clang tasks.c -w -O3
+OMP_NUM_THREADS=1 ././clang/tasks_clang
+Time in seconds = 0.000017
+OMP_NUM_THREADS=2 ././clang/tasks_clang
+Time in seconds = 0.000049
+OMP_NUM_THREADS=4 ././clang/tasks_clang
+Time in seconds = 0.000066
+OMP_NUM_THREADS=8 ././clang/tasks_clang
+Time in seconds = 0.000059
+OMP_NUM_THREADS=16 ././clang/tasks_clang
+Time in seconds = 0.000509
+OMP_NUM_THREADS=28 ././clang/tasks_clang
+Time in seconds = 0.000712
+
+******   tasks_clang -O2   ******
+
+clang -fopenmp -o ./clang/tasks_clang tasks.c -w -O2
+OMP_NUM_THREADS=1 ././clang/tasks_clang
+Time in seconds = 0.000022
+OMP_NUM_THREADS=2 ././clang/tasks_clang
+Time in seconds = 0.000060
+OMP_NUM_THREADS=4 ././clang/tasks_clang
+Time in seconds = 0.000083
+OMP_NUM_THREADS=8 ././clang/tasks_clang
+Time in seconds = 0.000072
+OMP_NUM_THREADS=16 ././clang/tasks_clang
+Time in seconds = 0.000113
+OMP_NUM_THREADS=28 ././clang/tasks_clang
+Time in seconds = 0.000819
+
+******   tasks_clang -Ofast   ******
+
+clang -fopenmp -o ./clang/tasks_clang tasks.c -w -Ofast
+OMP_NUM_THREADS=1 ././clang/tasks_clang
+Time in seconds = 0.000013
+OMP_NUM_THREADS=2 ././clang/tasks_clang
+Time in seconds = 0.000046
+OMP_NUM_THREADS=4 ././clang/tasks_clang
+Time in seconds = 0.000074
+OMP_NUM_THREADS=8 ././clang/tasks_clang
+Time in seconds = 0.000390
+OMP_NUM_THREADS=16 ././clang/tasks_clang
+Time in seconds = 0.000070
+OMP_NUM_THREADS=28 ././clang/tasks_clang
+Time in seconds = 0.000697
+
+******   tasks_nvc    ******
+
+nvc -mp -o ./nvc/tasks_nvc tasks.c -w 
+OMP_NUM_THREADS=1 ././nvc/tasks_nvc
+Time in seconds = 0.000081
+OMP_NUM_THREADS=2 ././nvc/tasks_nvc
+Time in seconds = 0.000142
+OMP_NUM_THREADS=4 ././nvc/tasks_nvc
+Time in seconds = 0.000156
+OMP_NUM_THREADS=8 ././nvc/tasks_nvc
+Time in seconds = 0.000139
+OMP_NUM_THREADS=16 ././nvc/tasks_nvc
+Time in seconds = 0.000164
+OMP_NUM_THREADS=28 ././nvc/tasks_nvc
+Time in seconds = 0.000145
+
+******   tasks_nvc -O3   ******
+
+nvc -mp -o ./nvc/tasks_nvc tasks.c -w -O3
+OMP_NUM_THREADS=1 ././nvc/tasks_nvc
+Time in seconds = 0.000004
+OMP_NUM_THREADS=2 ././nvc/tasks_nvc
+Time in seconds = 0.000011
+OMP_NUM_THREADS=4 ././nvc/tasks_nvc
+Time in seconds = 0.000021
+OMP_NUM_THREADS=8 ././nvc/tasks_nvc
+Time in seconds = 0.000050
+OMP_NUM_THREADS=16 ././nvc/tasks_nvc
+Time in seconds = 0.000058
+OMP_NUM_THREADS=28 ././nvc/tasks_nvc
+Time in seconds = 0.000481
+
+******   tasks_nvc -O2   ******
+
+nvc -mp -o ./nvc/tasks_nvc tasks.c -w -O2
+OMP_NUM_THREADS=1 ././nvc/tasks_nvc
+Time in seconds = 0.000004
+OMP_NUM_THREADS=2 ././nvc/tasks_nvc
+Time in seconds = 0.000009
+OMP_NUM_THREADS=4 ././nvc/tasks_nvc
+Time in seconds = 0.000038
+OMP_NUM_THREADS=8 ././nvc/tasks_nvc
+Time in seconds = 0.000046
+OMP_NUM_THREADS=16 ././nvc/tasks_nvc
+Time in seconds = 0.000049
+OMP_NUM_THREADS=28 ././nvc/tasks_nvc
+Time in seconds = 0.000566
+
+******   tasks_nvc -Ofast   ******
+
+nvc -mp -o ./nvc/tasks_nvc tasks.c -w -Ofast
+OMP_NUM_THREADS=1 ././nvc/tasks_nvc
+Time in seconds = 0.000004
+OMP_NUM_THREADS=2 ././nvc/tasks_nvc
+Time in seconds = 0.000010
+OMP_NUM_THREADS=4 ././nvc/tasks_nvc
+Time in seconds = 0.000077
+OMP_NUM_THREADS=8 ././nvc/tasks_nvc
+Time in seconds = 0.000025
+OMP_NUM_THREADS=16 ././nvc/tasks_nvc
+Time in seconds = 0.000051
+OMP_NUM_THREADS=28 ././nvc/tasks_nvc
+Time in seconds = 0.000084
+
+******   tasks_icx    ******
+
+icx -fiopenmp -o ./icx/tasks_icx tasks.c -w 
+OMP_NUM_THREADS=1 ././icx/tasks_icx
+Time in seconds = 0.000058
+OMP_NUM_THREADS=2 ././icx/tasks_icx
+Time in seconds = 0.000076
+OMP_NUM_THREADS=4 ././icx/tasks_icx
+Time in seconds = 0.000103
+OMP_NUM_THREADS=8 ././icx/tasks_icx
+Time in seconds = 0.000219
+OMP_NUM_THREADS=16 ././icx/tasks_icx
+Time in seconds = 0.000698
+OMP_NUM_THREADS=28 ././icx/tasks_icx
+Time in seconds = 0.001110
+
+******   tasks_icx -O3   ******
+
+icx -fiopenmp -o ./icx/tasks_icx tasks.c -w -O3
+OMP_NUM_THREADS=1 ././icx/tasks_icx
+Time in seconds = 0.000060
+OMP_NUM_THREADS=2 ././icx/tasks_icx
+Time in seconds = 0.000121
+OMP_NUM_THREADS=4 ././icx/tasks_icx
+Time in seconds = 0.000231
+OMP_NUM_THREADS=8 ././icx/tasks_icx
+Time in seconds = 0.000533
+OMP_NUM_THREADS=16 ././icx/tasks_icx
+Time in seconds = 0.000693
+OMP_NUM_THREADS=28 ././icx/tasks_icx
+Time in seconds = 0.000673
+
+******   tasks_icx -O2   ******
+
+icx -fiopenmp -o ./icx/tasks_icx tasks.c -w -O2
+OMP_NUM_THREADS=1 ././icx/tasks_icx
+Time in seconds = 0.000059
+OMP_NUM_THREADS=2 ././icx/tasks_icx
+Time in seconds = 0.000058
+OMP_NUM_THREADS=4 ././icx/tasks_icx
+Time in seconds = 0.000131
+OMP_NUM_THREADS=8 ././icx/tasks_icx
+Time in seconds = 0.000106
+OMP_NUM_THREADS=16 ././icx/tasks_icx
+Time in seconds = 0.000151
+OMP_NUM_THREADS=28 ././icx/tasks_icx
+Time in seconds = 0.000945
+
+******   tasks_icx -Ofast   ******
+
+icx -fiopenmp -o ./icx/tasks_icx tasks.c -w -Ofast
+OMP_NUM_THREADS=1 ././icx/tasks_icx
+Time in seconds = 0.000061
+OMP_NUM_THREADS=2 ././icx/tasks_icx
+Time in seconds = 0.000078
+OMP_NUM_THREADS=4 ././icx/tasks_icx
+Time in seconds = 0.000105
+OMP_NUM_THREADS=8 ././icx/tasks_icx
+Time in seconds = 0.000162
+OMP_NUM_THREADS=16 ././icx/tasks_icx
+Time in seconds = 0.000152
+OMP_NUM_THREADS=28 ././icx/tasks_icx
+Time in seconds = 0.000470
